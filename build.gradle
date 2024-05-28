@@ -17,8 +17,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-cache'
 	implementation group: 'org.telegram', name: 'telegrambots', version: '6.9.7.0'
-
 	// https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
 	implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.12.0'
 

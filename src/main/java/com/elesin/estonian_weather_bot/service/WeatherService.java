@@ -28,4 +28,29 @@ public interface WeatherService {
     String getWeatherKeila () throws ServiceException;
     String getWeatherMustvee() throws ServiceException;
     String getWeatherOtepaa() throws ServiceException;
+
+    void clearKURESSAARECache();
+    void clearTALLINNCache();
+    void clearKUNDACache();
+    void clearJOHVICache();
+    void clearNARVACache();
+    void clearVAIKEMARJACache();
+    void clearJOGEVACache();
+    void clearTARTUCache();
+    void clearVORUCache();
+    void clearVALGACache();
+    void clearVILJANDICache();
+    void clearKIHNUCache();
+    void clearHAAPSALUCache();
+    void clearPALDISKICache();
+    void clearPARNUCache();
+    void clearNARVAJOESUUCache();
+    void clearPIRITACache();
+    void clearLOKSACache();
+    void clearKEHRACache();
+    void clearRAPINACache();
+    void clearTOILACache();
+    void clearKEILACache();
+    void clearMUSTVEECache();
+    void clearOTEPAACache();
 }
