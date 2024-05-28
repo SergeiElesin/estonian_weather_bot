@@ -29,7 +29,7 @@ public class WeatherServiceImpl implements WeatherService {
     private static final String VILJANDI_XPATH = "/observations//station[13]/airtemperature";
     private static final String KIHNU_XPATH = "/observations//station[19]/airtemperature";
     private static final String HAAPSALU_XPATH = "/observations//station[24]/airtemperature";
-    private static final String PALDISKI_XPATH = "/observations//station[29]/airtemperature";
+    private static final String PALDISKI_XPATH = "/observations//station[3]/airtemperature";
     private static final String PARNU_XPATH = "/observations//station[30]/airtemperature";
     private static final String NARVAJOESUU_XPATH = "/observations//station[108]/airtemperature";
     private static final String PIRITA_XPATH = "/observations//station[39]/airtemperature";
