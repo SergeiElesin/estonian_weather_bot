@@ -54,7 +54,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         super(botToken);
     }
 
-    //Обработка комманд
+    //Commands
     @Override
     public void onUpdateReceived(Update update) {
         if (!update.hasMessage() || !update.getMessage().hasText()) {
@@ -102,7 +102,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         return "${spring.application.name}";
     }
 
-    //Метод - обработчик команды /start
+    //start
     private void startCommand(Long chatId, String userName){
         var text = """
                 Welcome to Estonian Weather Bot, %s!
@@ -144,8 +144,8 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    ////методы обработки команд
-    //Метод - обработчик команды /kuressaare
+
+    //kuressaare
     private void kuressaareCommand(Long chatId) {
         String formattedText;
         try{
@@ -159,7 +159,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /tallinn
+    //tallinn
     private void tallinnCommand(Long chatId) {
         String formattedText;
         try{
@@ -173,7 +173,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /kunda
+    //kunda
     private void kundaCommand(Long chatId) {
         String formattedText;
         try{
@@ -187,7 +187,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /Jõhvi
+    //Johvi
     private void johviCommand(Long chatId) {
         String formattedText;
         try{
@@ -201,7 +201,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /Narva
+    //narva
     private void narvaCommand(Long chatId) {
         String formattedText;
         try{
@@ -215,7 +215,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /vaikeMarja
+    ///vaikemarja
     private void vaikeMarjaCommand(Long chatId) {
         String formattedText;
         try{
@@ -229,7 +229,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /jogeva
+    //jogeva
     private void jogevaCommand(Long chatId) {
         String formattedText;
         try{
@@ -243,7 +243,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /tartu
+    //tartu
     private void tartuCommand(Long chatId) {
         String formattedText;
         try{
@@ -257,7 +257,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /voru
+    //voru
     private void voruCommand(Long chatId) {
         String formattedText;
         try{
@@ -271,7 +271,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /valga
+    //valga
     private void valgaCommand(Long chatId) {
         String formattedText;
         try{
@@ -285,7 +285,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /viljandi
+    //viljandi
     private void viljandiCommand(Long chatId) {
         String formattedText;
         try{
@@ -299,7 +299,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /kihnu
+    //kihnu
     private void kihnuCommand(Long chatId) {
         String formattedText;
         try{
@@ -313,7 +313,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /haapsalu
+    //haapsalu
     private void haapsaluCommand(Long chatId) {
         String formattedText;
         try{
@@ -327,7 +327,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /paldiski
+    //paldiski
     private void paldiskiCommand(Long chatId) {
         String formattedText;
         try{
@@ -341,7 +341,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /parnu
+    //parnu
     private void parnuCommand(Long chatId) {
         String formattedText;
         try{
@@ -355,7 +355,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /narvaJoesuu
+    //narvaJoesuu
     private void narvaJoesuuCommand(Long chatId) {
         String formattedText;
         try{
@@ -369,7 +369,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /pirita
+    //pirita
     private void piritaCommand(Long chatId) {
         String formattedText;
         try{
@@ -383,7 +383,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /loksa
+    //loksa
     private void loksaCommand(Long chatId) {
         String formattedText;
         try{
@@ -397,7 +397,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /kehra
+    //kehra
     private void kehraCommand(Long chatId) {
         String formattedText;
         try{
@@ -411,7 +411,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /rapina
+    //rapina
     private void rapinaCommand(Long chatId) {
         String formattedText;
         try{
@@ -425,7 +425,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /toila
+    //toila
     private void toilaCommand(Long chatId) {
         String formattedText;
         try{
@@ -439,7 +439,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /keila
+    //keila
     private void keilaCommand(Long chatId) {
         String formattedText;
         try{
@@ -453,7 +453,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /mustvee
+    //mustvee
     private void mustveeCommand(Long chatId) {
         String formattedText;
         try{
@@ -467,7 +467,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /otepaa
+    //otepaa
     private void otepaaCommand(Long chatId) {
         String formattedText;
         try{
@@ -481,7 +481,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, formattedText);
     }
 
-    //Метод - обработчик команды /help
+    //help
     private void helpCommand(Long chatId) {
         var text = """
                 /tallinn - air temperature in Tallinn
@@ -515,13 +515,13 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         sendMessage(chatId, text);
     }
 
-    //Обрабатываем неизвестную команду
+    //Unknown command
     private void uncknownCommand(Long chatId) {
         var text = "Could not recognize the command";
         sendMessage(chatId, text);
     }
 
-    //Отправляем сообщения
+    //Send message
     private void sendMessage(Long chatId, String text) {
         var chatIdStr = String.valueOf(chatId);
         var sendMessage = new SendMessage(chatIdStr, text);
