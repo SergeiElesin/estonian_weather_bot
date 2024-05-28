@@ -23,7 +23,7 @@ public class WeatherClient {
                 .url(url)
                 .build();
 
-        try (var response = httpClient.newCall(request).execute();) {
+        try (var response = httpClient.newCall(request).execute()) {
             var body = response.body();
             return body == null ? null : body.string();
         } catch (IOException e){
