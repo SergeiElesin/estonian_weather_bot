@@ -12,9 +12,9 @@ public class InvalidationScheduler {
     @Autowired
     private WeatherService service;
 
-    //Deleting cach every 24 hours
+    //Deleting cache every 24 hours
     //@Scheduled(cron = "* 0 0 * * ?")
-    //Deleting cach every hour
+    //Deleting cache every hour
     @Scheduled(cron = "0 0 * ? * *")
     public void invalidateCache() {
 
