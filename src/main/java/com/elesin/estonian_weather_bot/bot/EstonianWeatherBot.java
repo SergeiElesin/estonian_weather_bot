@@ -109,7 +109,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
                 
                 Here you can find out the Air Temperature in Estonia.
                 
-                To choose location, use the commands:
+                To select a location, use the commands:
                 /tallinn
                 /kuressaare
                 /kunda
@@ -150,7 +150,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var kuressaare = weatherService.getWeatherKuressaare();
-            var text = "Air temperature in Kuressaare for %s is %s degrees";
+            var text = "Air temperature in Kuressaare for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), kuressaare);
         } catch (ServiceException e){
             LOG.error("Getting Kuressaare failed", e);
@@ -164,7 +164,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var tallinn = weatherService.getWeatherTallinn();
-            var text = "Air temperature in Tallin for %s is %s degrees";
+            var text = "Air temperature in Tallin for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), tallinn);
         } catch (ServiceException e){
             LOG.error("Getting Tallinn failed", e);
@@ -178,7 +178,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var kunda = weatherService.getWeatherKunda();
-            var text = "Air temperature in Kunda for %s is %s degrees";
+            var text = "Air temperature in Kunda for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), kunda);
         } catch (ServiceException e){
             LOG.error("Getting Kunda failed", e);
@@ -192,7 +192,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var johvi = weatherService.getWeatherJohvi();
-            var text = "Air temperature in Jõhvi for %s is %s degrees";
+            var text = "Air temperature in Jõhvi for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), johvi);
         } catch (ServiceException e){
             LOG.error("Getting Jõhvi failed", e);
@@ -206,7 +206,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var narva = weatherService.getWeatherNarva();
-            var text = "Air temperature in Narva for %s is %s degrees";
+            var text = "Air temperature in Narva for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), narva);
         } catch (ServiceException e){
             LOG.error("Getting Narva failed", e);
@@ -220,7 +220,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var vaikeMarja = weatherService.getWeatherVaikeMaarja();
-            var text = "Air temperature in Väike-Maarja for %s is %s degrees";
+            var text = "Air temperature in Väike-Maarja for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), vaikeMarja);
         } catch (ServiceException e){
             LOG.error("Getting Väike-Maarja failed", e);
@@ -234,7 +234,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var jogeva = weatherService.getWeatherJogeva();
-            var text = "Air temperature in Jõgeva for %s is %s degrees";
+            var text = "Air temperature in Jõgeva for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), jogeva);
         } catch (ServiceException e){
             LOG.error("Getting Jõgeva failed", e);
@@ -248,7 +248,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var tartu = weatherService.getWeatherTartu();
-            var text = "Air temperature in Tartu for %s is %s degrees";
+            var text = "Air temperature in Tartu for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), tartu);
         } catch (ServiceException e){
             LOG.error("Getting Tartu failed", e);
@@ -262,7 +262,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var voru = weatherService.getWeatherVoru();
-            var text = "Air temperature in Võru for %s is %s degrees";
+            var text = "Air temperature in Võru for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), voru);
         } catch (ServiceException e){
             LOG.error("Getting Võru failed", e);
@@ -276,7 +276,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var valga = weatherService.getWeatherValga();
-            var text = "Air temperature in Valga for %s is %s degrees";
+            var text = "Air temperature in Valga for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), valga);
         } catch (ServiceException e){
             LOG.error("Getting Valga failed", e);
@@ -290,7 +290,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var viljandi = weatherService.getWeatherViljandi();
-            var text = "Air temperature in Viljandi for %s is %s degrees";
+            var text = "Air temperature in Viljandi for %s is %s degrees."  + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), viljandi);
         } catch (ServiceException e){
             LOG.error("Getting Viljandi failed", e);
@@ -304,7 +304,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var kihnu = weatherService.getWeatherKihnu();
-            var text = "Air temperature in Kihnu for %s is %s degrees";
+            var text = "Air temperature in Kihnu for %s is %s degrees."  + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), kihnu);
         } catch (ServiceException e){
             LOG.error("Getting Kihnu failed", e);
@@ -318,7 +318,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var haapsalu = weatherService.getWeatherHaapsalu();
-            var text = "Air temperature in Haapsalu for %s is %s degrees";
+            var text = "Air temperature in Haapsalu for %s is %s degrees."  + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), haapsalu);
         } catch (ServiceException e){
             LOG.error("Getting Haapsalu failed", e);
@@ -332,7 +332,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var paldiski = weatherService.getWeatherPaldiski();
-            var text = "Air temperature in Paldiski for %s is %s degrees";
+            var text = "Air temperature in Paldiski for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), paldiski);
         } catch (ServiceException e){
             LOG.error("Getting Paldiski failed", e);
@@ -346,7 +346,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var parnu = weatherService.getWeatherParnu();
-            var text = "Air temperature in Pärnu for %s is %s degrees";
+            var text = "Air temperature in Pärnu for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), parnu);
         } catch (ServiceException e){
             LOG.error("Getting Pärnu failed", e);
@@ -360,7 +360,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var narvaJoesuu = weatherService.getWeatherNarvaJoesuu();
-            var text = "Air temperature in Narva-Jõesuu for %s is %s degrees";
+            var text = "Air temperature in Narva-Jõesuu for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), narvaJoesuu);
         } catch (ServiceException e){
             LOG.error("Getting Narva-Jõesuu failed", e);
@@ -374,7 +374,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var pirita = weatherService.getWeatherPirita();
-            var text = "Air temperature in Pirita for %s is %s degrees";
+            var text = "Air temperature in Pirita for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), pirita);
         } catch (ServiceException e){
             LOG.error("Getting Pirita failed", e);
@@ -388,7 +388,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var loksa = weatherService.getWeatherLoksa();
-            var text = "Air temperature in Loksa for %s is %s degrees";
+            var text = "Air temperature in Loksa for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), loksa);
         } catch (ServiceException e){
             LOG.error("Getting Loksa failed", e);
@@ -402,7 +402,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var kehra = weatherService.getWeatherKehra();
-            var text = "Air temperature in Kehra for %s is %s degrees";
+            var text = "Air temperature in Kehra for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), kehra);
         } catch (ServiceException e){
             LOG.error("Getting Kehra failed", e);
@@ -416,7 +416,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var rapina = weatherService.getWeatherRapina();
-            var text = "Air temperature in Räpina for %s is %s degrees";
+            var text = "Air temperature in Räpina for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), rapina);
         } catch (ServiceException e){
             LOG.error("Getting Räpina failed", e);
@@ -430,7 +430,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var toila = weatherService.getWeatherToila();
-            var text = "Air temperature in Toila for %s is %s degrees";
+            var text = "Air temperature in Toila for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), toila);
         } catch (ServiceException e){
             LOG.error("Getting Toila failed", e);
@@ -444,7 +444,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var keila = weatherService.getWeatherKeila();
-            var text = "Air temperature in Keila for %s is %s degrees";
+            var text = "Air temperature in Keila for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), keila);
         } catch (ServiceException e){
             LOG.error("Getting Keila failed", e);
@@ -458,7 +458,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var mustvee = weatherService.getWeatherMustvee();
-            var text = "Air temperature in Mustvee for %s is %s degrees";
+            var text = "Air temperature in Mustvee for %s is %s degrees." + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), mustvee);
         } catch (ServiceException e){
             LOG.error("Getting Mustvee failed", e);
@@ -472,7 +472,7 @@ public class EstonianWeatherBot extends TelegramLongPollingBot {
         String formattedText;
         try{
             var otepaa = weatherService.getWeatherOtepaa();
-            var text = "Air temperature in Otepää for %s is %s degrees";
+            var text = "Air temperature in Otepää for %s is %s degrees."  + "\n" + "Have a nice day!";
             formattedText = String.format(text, LocalDate.now(), otepaa);
         } catch (ServiceException e){
             LOG.error("Getting Otepää failed", e);
